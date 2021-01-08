@@ -1,9 +1,9 @@
 import React, {useEffect } from 'react';
 import "./index.css";
+import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
 import { StoreState } from '../../types/index';
 import { Dispatch } from 'redux';
 import {connect} from "react-redux";
-
 interface Props {
     demonum: number;
     onSetNum: (num:number) => void;
@@ -36,6 +36,7 @@ function Home(props:Props){
   return(
     <div>
         <h1 onClick={doSetNum}>Home页面{demonum}</h1>
+        <Button className="demo_button" type="warning">xxx</Button>
     </div>
   )
 }
